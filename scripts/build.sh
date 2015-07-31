@@ -13,7 +13,7 @@ echo "-- Checking coverage thresholds --"
 time npm run check-coverage
 echo "-- Coverage looks good --"
 
-if [[ $CI && $CI -ne 0 ]]; then
+if [ "$CI" = "true" ]; then
   echo "-- Reporting code coverage --"
   cat ./coverage/lcov.info | node_modules/.bin/codecov
   echo "-- Code coverage reported --"
