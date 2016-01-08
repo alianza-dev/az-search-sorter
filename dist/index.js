@@ -92,7 +92,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }).filter(function (item) {
 	    return options.keepNonMatching || item.score > -1;
 	  }).sort(function (itemA, itemB) {
-	    return itemA.score < itemB.score;
+	    if (itemA.score < itemB.score) {
+	      return 1;
+	    } else if (itemA.score > itemB.score) {
+	      return -1;
+	    } else {
+	      return 0;
+	    }
 	  }).map(function (item) {
 	    return item.obj;
 	  }); // get the value and reverse it (best match first)
