@@ -24,7 +24,15 @@ function azSearchSorter(givenString = '', thingsToSearch = [], options = {}) {
       return {obj, score};
     })
     .filter(item => options.keepNonMatching || item.score > -1)
-    .sort((itemA, itemB) => itemA.score < itemB.score)
+    .sort((itemA, itemB) => {
+      if (itemA.score < itemB.score) {
+        return 1;
+      } else if (itemA.score > itemB.score) {
+        return -1;
+      } else {
+        return 0;
+      }
+    })
     .map(item => item.obj); // get the value and reverse it (best match first)
 }
 
