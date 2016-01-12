@@ -9,7 +9,7 @@
     "build": "npm run build:dev & npm run build:prod",
     "check-coverage": "./node_modules/istanbul/lib/cli.js check-coverage --statements 100 --functions 100 --lines 100 --branches 100",
     "ci": "npm run eslint && npm run test:single && npm run check-coverage && npm run build",
-    "eslint": "eslint src/ -c node_modules/kcd-common-tools/shared/test.eslintrc",
+    "eslint": "eslint src/ -c .eslintrc",
     "release": "npm run build && with-package git commit -am pkg.version && with-package git tag pkg.version && git push && npm publish && git push --tags",
     "release:beta": "npm run release && npm run tag:beta",
     "report-coverage": "cat ./coverage/lcov.info | codecov",

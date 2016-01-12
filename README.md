@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/az-search-sorter.svg?style=flat-square)](https://www.npmjs.org/package/az-search-sorter)
 [![npm downloads](https://img.shields.io/npm/dm/az-search-sorter.svg?style=flat-square)](http://npm-stat.com/charts.html?package=az-search-sorter&from=2015-06-01)
-[![Build Status](https://snap-ci.com/alianza-dev/az-search-sorter/branch/master/build_image)](https://snap-ci.com/alianza-dev/az-search-sorter/branch/master)
+[![Build Status](https://img.shields.io/travis/alianza-dev/az-search-sorter/master.svg?style=flat-square)](https://travis-ci.org/alianza-dev/az-search-sorter)
 [![Code Coverage](https://img.shields.io/codecov/c/github/alianza-dev/az-search-sorter.svg?style=flat-square)](https://codecov.io/github/alianza-dev/az-search-sorter)
 
 A function that takes a search term, things to search, and some configuration options and returns the things to search
